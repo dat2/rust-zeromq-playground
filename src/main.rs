@@ -56,7 +56,7 @@ fn main() {
         let mut pull_socket = ctx.socket(zmq::PULL).unwrap();
         pull_socket.connect(SOCKET_ADDR).unwrap();
 
-        // push the socket
+        // push a new worker with its pulling socket
         children.push(thread::spawn(move || {
             worker(pull_socket);
         }));
