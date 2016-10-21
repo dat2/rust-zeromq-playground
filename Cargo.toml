@@ -1,0 +1,15 @@
+[package]
+name = "rust-zeromq-playground"
+version = "0.1.0"
+authors = ["Nicholas Dujay <nickdujay@gmail.com>"]
+
+[dependencies]
+termion = "1"
+num_cpus = "1.0"
+chrono = "0.2"
+serde = "0.8"
+serde_json = "0.8"
+serde_derive = "0.8"
+
+[dependencies.zmq]
+git = "https://github.com/erickt/rust-zmq.git"
